@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="https://github.com/JasonWong2333/Game_AM4">
-        <img src="https://github.com/JasonWong2333/Game_AM4/blob/main/img/202412131923442.png" width="848" height="465"/>
+        <img src="https://github.com/JasonWong2333/Game_AM4/blob/main/img/20241213192342.png" width="848" height="465"/>
     </a>
     <br>
     <p align="center">
