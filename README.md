@@ -1,6 +1,9 @@
 ## AirlineManager4 小助手
 
 <p align="center">
+    <a href="https://github.com/JasonWong2333/Game_AM4">
+        <img src="https://github.com/JasonWong2333/Game_AM4/blob/main/img/20241213191010.png" width="150" height="150"/>
+    </a>
     <br>
     <p align="center">
         <a href="https://github.com/JasonWong2333/Game_AM4"><img src="https://img.shields.io/github/languages/code-size/JasonWong2333/Game_AM4?color=blueviolet"></a>
