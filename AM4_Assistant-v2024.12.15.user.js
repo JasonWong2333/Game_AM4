@@ -262,7 +262,7 @@
         console.log('检测碳价格...');
 
         // 获取用户设置
-        const co2Amount = localStorage.getItem('co2Amount') || '1000000';
+        const co2Amount = localStorage.getItem('co2Amount') || '2000000';
         const co2PriceThreshold = parseFloat(localStorage.getItem('co2PriceThreshold') || '108');
 
         // 获取当前价格（从 HTML 中提取）
@@ -578,7 +578,7 @@
         </label>
         <label>
             碳购买数量:
-            <input type="number" id="co2AmountInput" value="1000000" style="width: 100%; margin-bottom: 10px;">
+            <input type="number" id="co2AmountInput" value="2000000" style="width: 100%; margin-bottom: 10px;">
         </label>
         <label>
             碳购买价格阈值:
