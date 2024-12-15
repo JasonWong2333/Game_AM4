@@ -229,8 +229,8 @@
         console.log('检测燃油价格...');
 
         // 获取用户设置
-        const fuelAmount = localStorage.getItem('fuelAmount') || '30000000';
-        const fuelPriceThreshold = parseFloat(localStorage.getItem('fuelPriceThreshold') || '380');
+        const fuelAmount = localStorage.getItem('fuelAmount') || '3000000';
+        const fuelPriceThreshold = parseFloat(localStorage.getItem('fuelPriceThreshold') || '480');
 
         // 获取当前价格（从 HTML 中提取）
         const priceElement = document.querySelector('.col-6.p-2 .text-danger b');
@@ -262,8 +262,8 @@
         console.log('检测碳价格...');
 
         // 获取用户设置
-        const co2Amount = localStorage.getItem('co2Amount') || '10000000';
-        const co2PriceThreshold = parseFloat(localStorage.getItem('co2PriceThreshold') || '105');
+        const co2Amount = localStorage.getItem('co2Amount') || '1000000';
+        const co2PriceThreshold = parseFloat(localStorage.getItem('co2PriceThreshold') || '108');
 
         // 获取当前价格（从 HTML 中提取）
         const priceElement = document.querySelector('.col-6.p-2 .text-danger b');
@@ -570,19 +570,19 @@
         <h3>设置</h3>
         <label>
             燃油购买数量:
-            <input type="number" id="fuelAmountInput" value="30000000" style="width: 100%; margin-bottom: 10px;">
+            <input type="number" id="fuelAmountInput" value="3000000" style="width: 100%; margin-bottom: 10px;">
         </label>
         <label>
             燃油购买价格阈值:
-            <input type="number" id="fuelPriceThresholdInput" value="380" style="width: 100%; margin-bottom: 10px;">
+            <input type="number" id="fuelPriceThresholdInput" value="420" style="width: 100%; margin-bottom: 10px;">
         </label>
         <label>
             碳购买数量:
-            <input type="number" id="co2AmountInput" value="10000000" style="width: 100%; margin-bottom: 10px;">
+            <input type="number" id="co2AmountInput" value="1000000" style="width: 100%; margin-bottom: 10px;">
         </label>
         <label>
             碳购买价格阈值:
-            <input type="number" id="co2PriceThresholdInput" value="105" style="width: 100%; margin-bottom: 10px;">
+            <input type="number" id="co2PriceThresholdInput" value="108" style="width: 100%; margin-bottom: 10px;">
         </label>
         <button id="saveSettingsButton" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">保存设置</button>
         <button id="closeSettingsButton" style="padding: 10px 20px; background-color: #dc3545; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">关闭</button>
