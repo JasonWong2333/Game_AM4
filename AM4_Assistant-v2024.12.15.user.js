@@ -138,14 +138,14 @@
     }
 
     async function selectRepairPercentage() {
-        console.log('正在选择维修百分比为 20%...');
+        console.log('正在选择维修百分比为 60%...');
 
         // 获取下拉菜单元素
         const repairDropdown = document.getElementById('repairPct');
         if (repairDropdown) {
-            // 设置下拉菜单的值为 "20"
-            repairDropdown.value = "20";
-            console.log('已选择维修百分比为 20%');
+            // 设置下拉菜单的值为 "60"
+            repairDropdown.value = "60";
+            console.log('已选择维修百分比为 60%');
 
             // 触发 change 事件以确保选择生效
             const event = new Event('change', { bubbles: true });
@@ -160,7 +160,7 @@
         console.log('查找 Plan bulk repair 按钮...');
 
         // 使用 querySelector 精确匹配目标按钮
-        const bulkRepairButton = document.querySelector('button.btn.btn-danger.btn-xs-real[onclick*="maint_plan_do.php?type=bulkRepair"][onclick*="pct=20"]');
+        const bulkRepairButton = document.querySelector('button.btn.btn-danger.btn-xs-real[onclick*="maint_plan_do.php?type=bulkRepair"][onclick*="pct=60"]');
 
         if (bulkRepairButton) {
             console.log('找到 Plan bulk repair 按钮，准备点击');
@@ -435,6 +435,7 @@
         await selectRepairPercentage();
         await randomDelay(); // 再次添加随机延迟
         await clickPlanBulkRepairButton();
+        await randomDelay(); // 再次添加随机延迟
         await clickButtonById('popBtn2');
         await randomDelay(); // 再次添加随机延迟
         await clickCheckButton();
