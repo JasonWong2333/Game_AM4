@@ -450,12 +450,12 @@
 
     // 启动脚本函数
     async function startScript() {
-        console.log('脚本已启动，每10分钟运行一次');
+        console.log('脚本已启动，每1分钟运行一次');
         isRunning = true;
         updateButtonText(); // 更新按钮文字
         await runScript(); // 立即运行一次主逻辑
 
-        let countdown = 600; // 倒计时初始值（10分钟 = 600秒）
+        let countdown = 60; // 倒计时初始值（1分钟 = 60秒）
 
         // 每秒更新倒计时
         const countdownInterval = setInterval(() => {
@@ -465,7 +465,7 @@
             }
 
             // 计算分钟和秒
-            const minutes = Math.floor(countdown / 60);
+            const minutes = Math.floor(countdown / 60); // 这里始终为 0，因为倒计时只有 1分钟
             const seconds = countdown % 60;
 
             // 更新倒计时显示
@@ -480,9 +480,9 @@
         }, 1000); // 每秒更新一次
 
         intervalId = setInterval(async () => {
-            countdown = 600; // 重置倒计时
-            await runScript(); // 每 10 分钟运行一次主逻辑
-        }, 600000); // 设置为 10 分钟
+            countdown = 60; // 重置倒计时为 1分钟
+            await runScript(); // 每 1 分钟运行一次主逻辑
+        }, 60000); // 设置为 1 分钟
     }
 
     // 停止脚本函数
@@ -592,10 +592,10 @@
 // 在页面顶部添加倒计时区域
     const countdownDisplay = document.createElement('div');
     countdownDisplay.id = 'countdownDisplay';
-    countdownDisplay.textContent = '下次运行: 10:00'; // 初始倒计时设置为 10 分钟
+    countdownDisplay.textContent = '下次运行: 1:00'; // 初始倒计时设置为 1 分钟
     countdownDisplay.style.position = 'fixed';
     countdownDisplay.style.top = '10px';
-    countdownDisplay.style.left = 'calc(50% + 145px)'; // 位于启动按钮右边
+    countdownDisplay.style.left = 'calc(50% + 142px)'; // 位于启动按钮右边
     countdownDisplay.style.transform = 'translateX(-50%)';
     countdownDisplay.style.zIndex = '9999';
     countdownDisplay.style.padding = '10px 20px';
