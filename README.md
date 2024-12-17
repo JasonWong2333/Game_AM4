@@ -29,7 +29,7 @@
 
 1. Chrome应用商店安装油猴插件/其他浏览器插件/手动安装[安装脚本管理器](https://greasyfork.org/zh-CN)，如安装可跳过。
 2. 点击[一键安装](https://greasyfork.org/zh-CN/scripts/520516-am4-assistant)安装脚本，安装本插件，若出现缺少";"的提示框，无视即可。
-3. 将游戏语言切换到“英语”。
+3. 打开[AirlineManager官网](https://www.airlinemanager.com/?gameType=web),并将游戏语言切换到“英语”。
 4. 安装后，刷新浏览器，在顶部中间会显示”启动脚本“，点击即可运行。
 
 移动端提示：如无法一键安装请[下载js文件](https://github.com/JasonWong2333/Game_AM4/blob/main/AM4_Assistant-v2024.12.15.user.js)手动安装。
